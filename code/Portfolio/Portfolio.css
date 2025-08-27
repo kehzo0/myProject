@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+:root {
+  --myredcolor: #be3144;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+list-style-type: none;
+}
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index:1;
+  width: 100%;
+  height: 60px;;
+  background-color: var(--myredcolor);
+
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+  line-height: 60px;
+  justify-content: end;
+  padding-right: 50px;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  
+}
+
+.nav-link a {
+  padding: 3px 13px;
+  border-radius: 5px;
+  transition: 1s easy;
+  
+}
+.nav-link:hover a {
+  background: #a22a3a;
+}
+
+#welcome-section {
+  position: relative;
+  padding-top: 60px;
+  background: #121111;
+  background: linear-gradient(90deg,rgba(59, 59, 59, 1) 0%, rgba(36, 36, 36, 1) 100%);
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+#welcome-section h3 {
+  font-weight: 200;
+  color: var(--myredcolor);
+}
+
+
+#projects {
+  padding: 7rem 2rem;
+  background-color: #45567d;
+  color: white;
+}
+
+
+.project-section-header {
+  margin: 0 auto 6rem auto;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 0.2rem solid white;
+  text-align: center;
+  max-width: 640px;
+  height: 65px;
+  font-size: 2.5rem;
+  
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 450px); 
+  justify-content: center;
+  align-items: center;
+  gap: 200px; 
+  padding: 0 6rem 0 6rem;
+  
+
+  
+}
+
+.project-image {
+  width: 450px;
+  height: 460px;
+  object-fit: cover;
+  
+}
+
+.project-tile {
+  position: relative;
+  text-align: center;
+  background-color: rgba(36, 36, 36, 1);
+  padding: 25px;
+  top: -4px;
+  font-family: "Poppins", sans-serif;
+  line-height: 10px;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  font-size: 1.4rem;
+}
+
+
+
+.span-before {
+  color: orange;
+  margin-right: 5px;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: 0.3s;
+}
+.span-after {
+  color: orange;
+  margin-left: 5px;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: 0.3s;
+
+}
+
+#profile-link:hover span{
+  opacity: 1;
+}
+
+.show-all-btn {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  background-color:rgba(36, 36, 36, 1); 
+  padding:10px 20px;
+  width: 160px;
+  text-align:center;
+  border-radius: 5px;
+  margin:0 auto;
+  margin-top: 100px;
+  font-size: 1.4rem;
+}
+
+.show-all-btn:hover {
+  background-color: var(--myredcolor);
+ transition: 0.3s ease-out;
+}
+
+.show-all-span {
+  display:inline-block;
+  margin-left: 10px;
+  transition: 1s ease;
+}
+
+
+.show-all-btn:hover .show-all-span {
+  transform: translateX(8px)
+}
+
+
+
+.contact-section{
+  width: 100%;
+  height: calc(100vh - 6rem - 60px);
+  background: linear-gradient(90deg,rgba(59, 59, 59, 1) 0%, rgba(36, 36, 36, 1) 100%); 
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Poppins" , sans-serif;
+  font-size: 2.3rem;
+}
+
+.contact-section p {
+  font-weight:200;
+  font-size: 1.2rem;
+  text-align: center; 
+}
+
+.mylinks {
+  font-family: "Poppins" , sans-serif;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  gap: 50px;
+  text-shadow: 2px 2px 1px black;
+}
+
+.icons {
+  margin-right:8px;
+}
+
+.contact-link {
+  transition: 0.5s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(10px);
+}
+
+.footer {
+  width: 100%;
+  height: 6rem;
+  border-top: 4px solid var(--myredcolor);
+  background: linear-gradient(90deg,rgba(59, 59, 59, 1) 0%, rgba(36, 36, 36, 1) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family:"Poppins", sans-serif;
+  color:white;
+}
+.p1 {
+  font-size: 16px;
+}
+
+.p2 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+@media (max-width:767px) {
+
+  #welcome-section {
+    font-size: 16px;
+  }
+  .nav-list {
+    justify-content: center;
+    padding-right: 0;
+    font-size: 16px;
+  }
+  .project-section h2 {
+    font-size: 16px;
+    border-bottom: none;
+    
+  
+  }
+  #projects {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+ .projects-grid {
+  grid-template-columns: repeat(1, 450px);
+  place-items: center;
+  }
+  
+  .project-tile {
+    font-size: 16px;
+  }
+  .project-image {
+    width: 300px;
+    height: 350px;
+  }
+ 
+  .contact-header {
+    font-size: 16px;
+  }
+  .mylinks {
+    font-size: 16px;
+    gap:10px;
+  }
+
+  .show-all-btn {
+    width: 130px;
+    font-size: 16px;
+    justify-content: center;
+  }
+  .footer p{
+    font-size: 10px;
+  }
+}
