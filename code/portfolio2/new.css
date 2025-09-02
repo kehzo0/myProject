@@ -319,8 +319,7 @@ footer {
 }
 footer {
     font-size: 1rem;
-    padding: 20px 0;
-    
+    justify-content: space-between;
 }
  footer p {
     display: none;
@@ -328,5 +327,6 @@ footer {
  .links-list {
     gap: 1.4rem;
     font-size: 0.8rem;
+    padding: 0;
  }
 }
