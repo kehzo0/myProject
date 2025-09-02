@@ -319,7 +319,7 @@ footer {
 }
 footer {
     font-size: 1rem;
-    justify-content: space-between;
+    justify-content: center;
 }
  footer p {
     display: none;
